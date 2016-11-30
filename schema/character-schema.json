@@ -1,0 +1,105 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "character",
+	"description": "Descripes a character, a party or other game documents.",
+	"type": "object",
+
+	"properties": {
+		"game": {
+			"type": "string"
+		},
+		"name": {
+			"type": "string"
+		},
+		"language": {
+			"enum": [ "en", "fr", "es", "pt", "pt-BR", "de", "it", "nl", "cy", "ru", "en-US" ]
+		},
+		"docs": {
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/doc"
+			}
+		},
+		"assets": {
+			"type": "object",
+			"patternProperties": {
+				"^.*$": {
+					"$ref": "#/definitions/asset"
+				}
+			}
+		},
+		"logo": {
+			"type": "string"
+		},
+		"watermark": {
+			"type": "string"
+		},
+		"additionalProperties": false
+	},
+	"required": [ "game", "docs" ],
+
+	"definitions": {
+		"doc": {
+			"type": "object",
+			"oneOf": [
+				{
+					"properties": {
+						"type": {
+							"enum": [ "character" ]
+						},
+						"name": {
+							"type": "string"
+						},
+						"colour": {
+							"enum": [ "normal", "light", "dark", "black", "red", ]
+						},
+						"classes": {
+							"type": "array",
+							"minItems": 1,
+							"uniqueItems": true,
+							"items": {
+								"type": "object",
+								"properties": {
+									"class": {
+										"type": "string"
+									},
+									"class": {
+										"type": "variant"
+									}
+								},
+								"required": [ "class" ]
+							}
+						},
+						"iconic": {
+							"type": "string"
+						},
+						"options": {
+							"type": "object",
+							"patternProperties": {
+								"^[a-z][a-zA-Z0-9]*$": {
+									"oneOf": [
+										{
+											"type": "string"
+										},
+										{
+											"type": "integer"
+										},
+										{
+											"type": "boolean"
+										}
+									]
+								}
+							},
+							"additionalProperties": false
+						}
+					},
+					"required": [ "type", "name", "classes" ]
+				}
+			]
+		},
+
+		"asset": {
+			"type": "string"
+		}
+	}
+}
