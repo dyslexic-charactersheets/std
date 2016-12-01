@@ -6,13 +6,15 @@
 
 	"properties": {
 		"game": {
-			"type": "string"
+			"type": "string",
+			"pattern": "^[a-z]+$"
 		},
 		"name": {
 			"type": "string"
 		},
 		"language": {
-			"enum": [ "en", "fr", "es", "pt", "pt-BR", "de", "it", "nl", "cy", "ru", "en-US" ]
+			"type": "string",
+			"pattern": "^[a-z]{2}(-[A-Z]{2})?$"
 		},
 		"docs": {
 			"type": "array",
@@ -51,7 +53,7 @@
 							"type": "string"
 						},
 						"colour": {
-							"enum": [ "normal", "light", "dark", "black", "red", ]
+							"type": "string"
 						},
 						"classes": {
 							"type": "array",
@@ -99,7 +101,8 @@
 		},
 
 		"asset": {
-			"type": "string"
+			"type": "string",
+			"pattern": "^[a-zA-Z0-9= \n]*$"
 		}
 	}
 }

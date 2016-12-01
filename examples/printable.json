@@ -1,0 +1,77 @@
+{
+	"game": "pathfinder",
+	"language": "en",
+	"docs": [
+		{
+			"name": "Grogar",
+			"colour": "blue",
+			"pages": [
+				{
+					"page": "core",
+					"logo": "customlogo1",
+					"skills": [
+				        { "name": "Acrobatics", "ability": "DEX", "useUntrained": true, "acp": true },
+				        { "name": "Appraise", "ability": "INT", "useUntrained": true, "noRage": true },
+				        { "name": "Bluff", "ability": "CHA", "useUntrained": true, "noRage": true, "favouredEnemy": true },
+				        { "name": "Climb", "ability": "STR", "useUntrained": true, "acp": true },
+				        { "name": "Concentration (WIS)", "displayName": "Concentration", "ability": "WIS", "noRage": true, "noRanks": true, "plusLevel": true },
+				        { "name": "Diplomacy", "ability": "CHA", "useUntrained": true, "noRage": true },
+			            { "name": "Wild Empathy", "subSkillOf": "Diplomacy", "ability": "CHA", "noRanks": true, "noRage": true, "plusLevel": true },
+				        { "name": "Disable Device", "ability": "DEX", "noRage": true, "acp": true },
+				        { "name": "Disguise", "ability": "CHA", "useUntrained": true, "noRage": true },
+				        { "name": "Escape Artist", "ability": "DEX", "useUntrained": true, "acp": true, "noRage": true },
+				        { "name": "Fly", "ability": "DEX", "useUntrained": true, "acp": true },
+				        { "name": "Handle Animal", "ability": "CHA", "noRage": true },
+				        { "name": "Heal", "ability": "WIS", "useUntrained": true },
+				        { "name": "Intimidate", "ability": "CHA", "useUntrained": true },
+				        { "name": "Knowledge (arcana)", "ability": "INT", "noRage": true, "afterFold": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Knowledge (dungeoneering)", "ability": "INT", "noRage": true, "afterFold": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Knowledge (engineering)", "ability": "INT", "noRage": true, "afterFold": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Knowledge (geography)", "ability": "INT", "noRage": true, "afterFold": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Knowledge (history)", "ability": "INT", "noRage": true, "afterFold": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Knowledge (local)", "ability": "INT", "noRage": true, "afterFold": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Knowledge (nature)", "ability": "INT", "noRage": true, "afterFold": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Knowledge (nobility)", "ability": "INT", "noRage": true, "afterFold": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Knowledge (planes)", "ability": "INT", "noRage": true, "afterFold": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Knowledge (psionics)", "ability": "INT", "noRage": true, "afterFold": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Knowledge (religion)", "ability": "INT", "noRage": true, "afterFold": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Linguistics", "ability": "INT", "noRage": true },
+				        { "name": "Perception", "ability": "WIS", "useUntrained": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Ride", "ability": "DEX", "useUntrained": true, "acp": true },
+				        { "name": "Sense Motive", "ability": "WIS", "useUntrained": true },
+				        { "name": "Sleight of Hand", "ability": "DEX", "acp": true, "noRage": true },
+				        { "name": "Spellcraft", "ability": "INT", "noRage": true },
+				        { "name": "Stealth", "ability": "DEX", "useUntrained": true, "acp": true, "noRage": true, "favouredTerrain": true },
+				        { "name": "Survival", "ability": "WIS", "useUntrained": true, "favouredEnemy": true, "favouredTerrain": true },
+				        { "name": "Swim", "ability": "STR", "useUntrained": true, "acp": true },
+				        { "name": "Use Magic Device", "ability": "CHA", "noRage": true },
+					]
+				},
+				{
+					"page": "combat",
+					"variant": "monk"
+				},
+				{
+					"page": "monk"
+				},
+				{
+					"page": "druid",
+					"variant": "animalcompanion"
+				},
+				{
+					"page": "inventory",
+					"variant": "without",
+					"iconic": "custompic1"
+				}
+			]
+		}
+	],
+	"assets": {
+		"customlogo1": "TWFuIGlzIGRpc3Rpbmd1aXNoZWQsIG5vdCBvbmx5IGJ5IGhpcyByZWFzb24sIGJ1dCBieSB0aGlz
+		    IHNpbmd1bGFyIHBhc3Npb24gZnJvbSBvdGhlciBhbmltYWxzLCB3aGljaCBpcyBhIGx1c3Qgb2Yg
+		    dGhlIG1pbmQsIHRoYXQgYnkgYSBwZXJzZXZlcmFuY2Ugb2YgZGVsaWdodCBpbiB0aGUgY29udGlu
+		    dWVkIGFuZCBpbmRlZmF0aWdhYmxlIGdlbmVyYXRpb24gb2Yga25vd2xlZGdlLCBleGNlZWRzIHRo
+		    ZSBzaG9ydCB2ZWhlbWVuY2Ugb2YgYW55IGNhcm5hbCBwbGVhc3VyZS4=",
+		"custompic1": "..."
+	}
+}

@@ -1,0 +1,130 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "printable",
+	"description": "Description of pages to be composited.",
+	"type": "object",
+	"properties": {
+		"game": {
+			"type": "string",
+			"pattern": "^[a-z]+$"
+		},
+		"language": {
+			"type": "string",
+			"pattern": "^[a-z]{2}(-[A-Z]{2})?$"
+		},
+		"docs": {
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/doc"
+			}
+		},
+		"assets": {
+			"type": "object",
+			"patternProperties": {
+				"^.*$": {
+					"$ref": "#/definitions/asset"
+				}
+			}
+		},
+	},
+	"required": [ "game", "docs" ],
+
+	"definitions": {
+		"doc": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string",
+				},
+				"colour": {
+					"type": "string"
+				},
+				"pages": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/page"
+					}
+				}
+			}
+		},
+
+		"page": {
+			"type": "object",
+			"properties": {
+				"page": {
+					"type": "string",
+					"pattern": "^[a-z]+$"
+				},
+				"variant": {
+					"type": "string",
+					"pattern": "^[a-z/-]+$"
+				},
+				"logo": {
+					"type": "string"
+				},
+				"iconic": {
+					"type": "string"
+				},
+				"skills": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/skill"
+					}
+				}
+			},
+			"required": [ "page" ]
+		},
+
+		"skill": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"displayName": {
+					"type": "string"
+				},
+				"ability": {
+					"type": "string",
+					"pattern": "^[A-Z0-9]{0,5}$"
+				},
+				"subSkillOf": {
+					"type": "string"
+				},
+				"useUntrained": {
+					"type": "boolean"
+				},
+				"noRage": {
+					"type": "boolean"
+				},
+				"acp": {
+					"type": "boolean"
+				},
+				"afterFold": {
+					"type": "boolean"
+				},
+				"favouredEnemy": {
+					"type": "boolean"
+				},
+				"favouredTerrain": {
+					"type": "boolean"
+				},
+				"noRanks": {
+					"type": "boolean"
+				},
+				"plusLevel": {
+					"type": "boolean"
+				},
+				"plusHalfLevel": {
+					"type": "boolean"
+				}
+			},
+			"required": [ "name" ]
+		},
+
+		"asset": {
+			"type": "string",
+			"pattern": "^a-zA-Z0-9= \n$"
+		}
+	}
+}
