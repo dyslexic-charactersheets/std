@@ -1,0 +1,41 @@
+{
+  "version": 0,
+  "data": {
+    "type": "character",
+    "id": "9a944c2",
+    "game": "pathfinder",
+    "name": "Harry Potter",
+    "pathfinder": {
+      "classes": [
+        {
+          "class": "Wizard",
+          "archetype": [ "Scroll Slinger" ]
+        },
+        {
+          "class": "Arcane Archer",
+          "prestige": true
+        }
+      ],
+      "skillsAll": true,
+      "lycanthrope": false,
+      "spellbookStyle": "large"
+    },
+    "language": "en",
+    "print": {
+      "colour": "#f6d328",
+      "dyslexic": true
+    },
+    "images": {
+      "iconic": "f34ca87",
+      "logo": "pathfinder.png"
+    }
+  },
+  "included": [
+    {
+      "type": "attachment",
+      "id": "f34ca87",
+      "format": "image/png",
+      "data": "PGh0bWw+CiAgPGhlYWQ+CiAgPC9oZWFkPgogIDxib2R5PgogICAgPHA+VGhpcyBpcyB0aGUgYm9keSBvZiB0aGUgbWVzc2FnZS48L3A+CiAgPC9ib2R5Pgo8L2h0bWw+Cg=="
+    }
+  ]
+}

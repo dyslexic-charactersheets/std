@@ -1,0 +1,66 @@
+{
+  "version": 0,
+  "data": {
+    "type": "party",
+    "id": "414fc9e",
+    "game": "pathfinder",
+    "characters": [
+      "9a944c2",
+      "8ac74b4"
+    ],
+    "language": "en",
+    "images": {
+      "logo": "pathfinder/pathfindersociety.png"
+    }
+  },
+  "included": [
+    {
+      "type": "character",
+      "id": "9a944c2",
+      "game": "pathfinder",
+      "name": "Harry Potter",
+      "pathfinder": {
+        "classes": [
+          {
+            "class": "Wizard",
+            "archetype": [ "Scroll Slinger" ]
+          }
+        ],
+        "skillsAll": true,
+        "spellbook": "large"
+      },
+      "print": {
+        "colour": "#f6d328"
+      },
+      "language": "en",
+      "images": {
+        "iconic": "f34ca87"
+      }
+    },
+    {
+      "type": "character",
+      "id": "8ac74b4",
+      "game": "pathfinder",
+      "name": "Hermione Granger",
+      "pathfinder": {
+        "classes": [
+          {
+            "class": "Wizard"
+          }
+        ],
+        "lycanthrope": true,
+        "spellbookStyle": "medium"
+      },
+      "print": {
+        "colour": "#c822d9"
+      },
+      "language": "en"
+    },
+    {
+      "type": "attachment",
+      "id": "f34ca87",
+      "format": "image/png",
+      "data": "PGh0bWw+CiAgPGhlYWQ+CiAgPC9oZWFkPgogIDxib2R5PgogICAgPHA+VGhpcyBpcyB0aGUgYm9keSBvZiB0aGUgbWVzc2FnZS48L3A+CiAgPC9ib2R5Pgo8L2h0bWw+Cg=="
+    }
+  ]
+}

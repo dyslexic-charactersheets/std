@@ -1,0 +1,63 @@
+{
+  "version": 0,
+  "data": {
+    "type": "character",
+    "id": "9a944c2",
+    "game": "pathfinder",
+    "name": "Harry Potter",
+    "pathfinder": {
+      "classes": [
+        {
+          "class": "Wizard",
+          "archetype": [ "Scroll Slinger" ]
+        },
+        {
+          "class": "Arcane Archer",
+          "prestige": true
+        }
+      ],
+      "skillsAll": true,
+      "lycanthrope": false,
+      "spellbookStyle": "large"
+    },
+    "language": "en",
+    "print": {
+      "colour": "#f6d328",
+      "dyslexic": true
+    },
+    "images": {
+      "iconic": "f34ca87",
+      "logo": "pathfinder.png"
+    },
+    "play": "a89cb1e"
+  },
+  "included": [
+    {
+      "type": "play",
+      "character": "9a944c2",
+      "id": "a89cb1e",
+      "levels": {
+        "Wizard": 6,
+        "Arcane Archer": 2
+      },
+      "attributes": {
+        "strength": 11,
+        "dexterity": 14,
+        "constitution": 16,
+        "intelligence": 17,
+        "wisdom": 12,
+        "charisma": 14,
+        "bab": 4,
+        "hp": 24,
+        "_hp": 19,
+        "_nonlethalhp": 3
+      }
+    },
+    {
+      "type": "attachment",
+      "id": "f34ca87",
+      "format": "image/png",
+      "data": "PGh0bWw+CiAgPGhlYWQ+CiAgPC9oZWFkPgogIDxib2R5PgogICAgPHA+VGhpcyBpcyB0aGUgYm9keSBvZiB0aGUgbWVzc2FnZS48L3A+CiAgPC9ib2R5Pgo8L2h0bWw+Cg=="
+    }
+  ]
+}

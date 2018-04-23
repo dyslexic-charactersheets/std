@@ -1,0 +1,25 @@
+{
+  "name": "std",
+  "description": "Standardised process for character sheet generation",
+  "version": "1.0.0",
+  "main": "README.md",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dyslexic-charactersheets/std.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dyslexic-charactersheets/std/issues"
+  },
+  "homepage": "https://github.com/dyslexic-charactersheets/std#readme",
+  "dependencies": {
+    "ajv-cli": "^3.0.0"
+  }
+}

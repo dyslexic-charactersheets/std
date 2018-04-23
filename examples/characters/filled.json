@@ -1,0 +1,39 @@
+{
+  "version": 0,
+  "data": {
+    "type": "character",
+    "id": "9a944c2@dyslexic-charactersheets.com",
+    "game": "pathfinder",
+    "name": "Harry Potter",
+    "pathfinder": {
+      "classes": [
+        {
+          "name": "Wizard",
+          "variant": "Scroll Slinger"
+        }
+      ],
+      "skillsAll": true,
+      "lycanthrope": false,
+      "spellbookStyle": "large",
+    },
+    "print": {
+      "printColour": "#f6d328",
+    },
+    "language": "en",
+    "images": {
+      "iconic": "f34ca87@dyslexic-charactersheets.com",
+      "animalCompanion": "",
+      "logo": "pathfinder.png"
+    }
+  },
+  "included": [
+  	{
+  		"type": "filled-character",
+    	"id": "414c9ae@dyslexic-charactersheets.com",
+    	"character-id": "9a944c2@dyslexic-charactersheets.com",
+    	"data": {
+    		"CHA": 4
+    	}
+  	}
+  ]
+}

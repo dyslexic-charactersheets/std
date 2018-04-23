@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Character Sheet",
+  "description": "A request to build a character sheet for a single character, a group, or another game element",
+  "type": "object",
+  "oneOf": [
+    {
+      "$ref": "#/definitions/dnd35-game-data"
+    },
+    {
+      "$ref": "#/definitions/pathfinder-game-data"
+    },
+    {
+      "$ref": "#/definitions/pathfinder2-game-data"
+    },
+    {
+      "$ref": "#/definitions/starfinder-game-data"
+    },
+  ],
+  "definitions": {
+    "base-game-data": {
+      "type": "object",
+      "properties": {
+        "name": { 
+          "type": "string"
+        }
+      }
+    },
+    "dnd35-game-data": {
+      "type": "object"
+    },
+    "pathfinder-game-data": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/base-game-data"
+        },
+        {
+          "properties": {
+            "game": {
+              "enum": [ "pathfinder" ]
+            }
+          }
+        }
+      ]
+    },
+    "pathfinder2-game-data": {
+      "type": "object"
+    },
+    "starfinder-game-data": {
+      "type": "object"
+    }
+  }
+}
